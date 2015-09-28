@@ -1,0 +1,14 @@
+[package]
+name = "fractal_tree"
+version = "0.1.0"
+authors = ["Carlos Galdino <carloshsgaldino@gmail.com>"]
+
+[[bin]]
+name = "fractal-tree"
+
+[dependencies]
+piston = "*"
+piston2d-graphics = "*"
+pistoncore-glutin_window = "*"
+piston_window = "*"
+gfx = "*"
