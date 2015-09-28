@@ -22,11 +22,10 @@ fn main() {
     }
 }
 
-fn lines(x: f64, y: f64, ang: f64, depth: f64) -> Vec<[f64; 4]> {
-    let vec = Vec::<[f64; 4]>::new();
+fn lines(x: f64, y: f64, ang: f64, depth: f64) -> Vec<graphics::types::Line> {
+    let mut vec = Vec::<graphics::types::Line>::new();
 
     if depth > 0.0 {
-        let mut vec = Vec::<[f64; 4]>::new();
         let x1 = x + (ang.deg_to_rad().cos() * depth * 10.0);
         let y1 = y + (ang.deg_to_rad().sin() * depth * 10.0);
 
